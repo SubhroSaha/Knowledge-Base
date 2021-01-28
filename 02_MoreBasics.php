@@ -14,7 +14,7 @@
             max-width: 80%;
             background-color: lightgreen;
             margin: auto;
-            text-align: ;
+            text-align: left;
             padding: 20px;
         }
     </style>
