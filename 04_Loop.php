@@ -97,23 +97,7 @@
     }
     
     
-    // Functions
-    function print5(){
-        echo "<br>Five";
-    }
-    echo print5();
-    echo print5();
-    echo print5();
-    echo print5();
     
-    function print_number($number){
-        echo "<br>The variable of the function is: ";
-        echo $number;
-    }
-    print_number(24);
-    print_number(50.55);
-    print_number(266);
-    print_number(2409380938409);
 
     ?>
 

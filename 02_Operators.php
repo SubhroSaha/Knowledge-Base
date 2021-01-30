@@ -8,30 +8,24 @@
 <body>
 
     <div class="container">
-        <h1>This is my first website</h1>
-        <?php
-            echo "Hello world! This is PHP";
-            echo "<br>";
-            // comment
-            /*
-            Multi line comment
-            */
-        ?>
+        <h2>Operators</h2>
+        
         <?php
 
         // Variables
-        echo "<h2>Variables</h2>";
         $variable1 = 34;
         $variable2 = 45;
         echo $variable1;
+        echo "<br>";
         echo $variable2;
-        
+        echo "<br>";            
         echo $variable1 + $variable2;
+        echo "<br>";
         Echo $variable1 + $variable2;
         echo "<br>";
         
         // Operators
-        echo "<h2>Operators</h2>";
+        // echo "<h2>Operators</h2>";
         
         // Arithmetic Operators
         echo "<h3>Arithmetic Operators</h3>";
@@ -55,8 +49,8 @@
         $newVar -= 1;
         $newVar *= 1;
         $newVar /= 1;
-        echo "The value of new variable newVar = variable1 is ";
-        echo $newVar;
+        echo "The value of new variable newVar = variable1 is ".$newVar;
+        // echo $newVar;
         echo "<br>";
         
         // Comparison Operators
@@ -76,7 +70,7 @@
         
         
         // Increment/Decrement Operators
-        echo "<h3>Comparison Operators</h3>";
+        echo "<h3>Increment/Decrement Operators</h3>";
         echo $variable1;
         echo "<br>";
         echo $variable1++;
@@ -99,7 +93,7 @@
         
         
         // Logical Operators
-        echo "<h3>Comparison Operators</h3>";
+        echo "<h3>Logical Operators Operators</h3>";
         
         // and (&&)
         $myVar = (true and true); 
@@ -140,64 +134,7 @@
         echo "<br>";
         
         ?>
-
-
-
-        <?php
-
-
-        // Data types
-        echo "<h2>Data types</h2>";
-
-        //  1. String
-        $var = "This is a String ";
-        echo $var;
-        echo "<br>";
-        echo var_dump($var);
-        echo "<br>";
-
-        //  2. Integer
-        $var = 67;
-        echo $var;
-        echo "<br>";
-        echo var_dump($var);
-        echo "<br>";
-
-        //  3. Float
-        $var = 67.999;
-        echo $var;
-        echo "<br>";
-        echo var_dump($var);
-        echo "<br>";
-
-        //  4. Boolean
-        $var = true;
-        echo $var;
-        echo "<br>";
-        echo var_dump($var);
-        echo "<br>";
-
-        //  5. Array
-        // $var = [1,2,3,4,5];
-        echo $var;
-        echo "<br>";
-        echo var_dump($var);
-        echo "<br>";
-
-        //  6. Object   
-        $var = 67;
-        echo $var;
-        echo "<br>";
-        echo var_dump($var);
-        echo "<br>";
-
-        // 7. Constant
-        define ('PI', 3.14);
-        echo PI;
-        echo "<br>";
-
-
-        ?>
+        
 
     </div>
 
