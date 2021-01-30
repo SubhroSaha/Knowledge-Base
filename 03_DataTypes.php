@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: borderbox;
+        }
+        .container{
+            max-width: 80%;
+            background-color: lightgreen;
+            margin: auto;
+            text-align: left;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
 
     <div class="container">
+    
         <h2>Data Types</h2>
 
         <?php
@@ -53,10 +68,24 @@
 
         //  5. Array
         $var4 = array(1,"Hello",3,4,5);
-        echo "Array is [".$var4[0].", ".$var4[1].", ".$var4[2].", ".$var4[3].", ".$var4[4]."]";
+        echo "Array var4 is [".$var4[0].", ".$var4[1].", ".$var4[2].", ".$var4[3].", ".$var4[4]."]";
         echo "<br>";
         echo "Datatype is ";
         echo var_dump($var4);
+        echo "<br>";
+        echo "<br>";
+
+        // Array
+        echo "<br>";
+        $languages = array("Python","C++","PHP","NodeJs");
+        echo "Array languages is [ ";
+        foreach ($languages as $value) {
+            echo $value. ", ";
+        }
+        echo " ]";
+        echo "<br>";
+        echo "Count of array is: ";
+        echo count($languages);
         echo "<br>";
         echo "<br>";
 

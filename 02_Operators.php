@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: borderbox;
+        }
+        .container{
+            max-width: 80%;
+            background-color: lightgreen;
+            margin: auto;
+            text-align: left;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
 
     <div class="container">
-        <h2>Operators</h2>
+
+        <h1>Operators</h1>
         
         <?php
 
