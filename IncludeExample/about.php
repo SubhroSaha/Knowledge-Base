@@ -1,3 +1,5 @@
+    <?php?>
+    
     <!-- ***** About Area Starts ***** -->
     <section class="section" id="about">
         <div class="container">

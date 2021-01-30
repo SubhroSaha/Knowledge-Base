@@ -1,3 +1,4 @@
+    <?php?>
     <!-- ***** Testimonials Starts ***** -->
     <section class="section" id="testimonials">
         <div class="container">

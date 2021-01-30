@@ -1,3 +1,4 @@
+    <?php?>
     <!-- ***** Projects Area Starts ***** -->
     <section class="section" id="projects">
       <div class="container">

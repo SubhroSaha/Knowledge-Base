@@ -1,3 +1,4 @@
+    <?php?>
     <!-- ***** Main Banner Area Start ***** -->
     <div class="main-banner header-text" id="top">
         <div class="Modern-Slider">

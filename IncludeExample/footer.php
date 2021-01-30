@@ -1,3 +1,4 @@
+    <?php?>
     <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">

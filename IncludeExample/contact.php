@@ -1,3 +1,4 @@
+    <?php?>
     <!-- ***** Contact Us Area Starts ***** -->
     <section class="section" id="contact-us">
         <div class="container">
