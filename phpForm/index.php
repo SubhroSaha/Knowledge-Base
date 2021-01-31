@@ -46,8 +46,7 @@ if(isset($_POST['name'])){
         $insert = false;
     }
     // Close database connection
-    $con->close();
-    
+    $con->close();    
 
 }
 
@@ -67,7 +66,7 @@ if(isset($_POST['name'])){
 <body>
     <!-- <img src="https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-iPad-wallpaper-hd-free-PIC-WPC00844-1024x1024.jpg" alt="" class="bg"> -->
     <div class="container">
-        <h1>Welcome to SubZero</h1>
+        <h1>Welcome to Subzero</h1>
         <h2>Please enter your details below</h2>
         <form action="index.php" method="post">
             <input type="text" name="name" id="name" placeholder="Enter your name">
