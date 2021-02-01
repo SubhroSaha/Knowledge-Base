@@ -15,6 +15,7 @@
         <input type="text" name="pwd" placeholder="Password"><br>
         <button type="submit" name="submit">Sign Up</button><br>
     </form>
+    
 
     <h1>Login</h1>
     <form action="signup.php" method="POST">
