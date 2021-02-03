@@ -1,0 +1,242 @@
+<!-- Global site tag (gtag.js) - Google Ads: 842192242 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-842192242"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'AW-842192242');
+
+</script>
+
+
+<!-- Event snippet for adding event listener on specific tags -->
+<script>
+		var y = [];
+  	var x = document.getElementsByTagName("a");						  // Get all the tag in array
+  	for (i = 0; i < x.length; i++) {												// Loop through all tags in array
+    	if (x[i].getAttribute("title")) {											// Get the attribute value
+      	if (x[i].getAttribute("title").includes("Demo")) {	// If the attribute contains Demo
+        	x[i].addEventListener("click", function() {				// Add event listener to the element
+          	gtag('event', 'conversion', {										// Fire conversion or anything yuo wanna do on click
+            	'send_to': 'AW-818802605/qdhRCKDV-u0BEK3ft4YD'
+          	});
+        	});
+      	}
+    	}
+  	}
+
+</script>
+
+
+<!-- Event snippet for Messenger Tawk conversion PreSubmit -->
+<script>
+  Tawk_API = Tawk_API || {};
+  Tawk_API.onPrechatSubmit = function(data) {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-723450350/w-EgCIv05-wBEO7z-9gC'
+    });
+  };
+
+</script>
+
+
+<!-- Event snippet for tracking clicks -->
+<script>
+  document.getElementsByClassName("single_add_to_cart_button button alt").addEventListener("click", function() {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-1018730184/R3pXCNTY9OsBEN2ygO0B'
+    });
+  });
+
+</script>
+
+
+
+<!-- Event snippet for Purchase conversion page -->
+<script>
+  var transaction_id = document.querySelector("#page > main > section > section > ul > li:nth-child(1) > span").innerText;
+  var total = document.querySelector("#page > main > section > section > ul > li:nth-child(2) > span").innerText.slice(1).replace(",", "");
+  var url = window.location.href;
+  if (url.includes("thank-you-page")) {
+    alert("Hi");
+    gtag('event', 'conversion', {
+      'send_to': 'AW-650376371/RUIKCKv0yeoBELPpj7YC',
+      'value': total,
+      'currency': 'SGD',
+      'transaction_id': transaction_id
+    });
+  }
+
+</script>
+
+
+<!-- Event snippet for tracking messages -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script>
+  var str = setInterval(function() {
+    if (jQuery('[class="wpcf7-response-output"]:contains("Thank you for your message. It has been sent.")').is(':visible')) {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-983432164/SqoTCMTq4-0BEOT399QD'
+      });
+      clearInterval(str);
+    }
+  }, 1000);
+
+</script>
+
+
+<script>
+  var msg = document.querySelector("#comp-kh54x11a > span > p:nth-child(1) > span > span > span").innerText;
+  if (msg == )
+
+</script>
+
+
+<!-- Event snippet to fire on  URL -->
+<script>
+  var url = window.location.href;
+  if (url.includes("contact-us")) {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-1018730184/ZWl4COCNx84BEMit4uUD'
+    });
+  }
+
+</script>
+
+
+<!-- Event snippet to fire on click on a specific URL -->
+<script>
+  var url = window.location.href;
+  if (url.includes("captive-washer-terminal-screws")) {
+    document.querySelector("#post-686 > div.entry-content > div:nth-child(1) > div:nth-child(2) > figure > a > img").addEventListener("click", function() {
+      alert("Hi");
+      gtag('event', 'conversion', {
+        'send_to': 'AW-999175270/2n-jCMW5_OgBEObouNwD'
+      });
+    });
+  }
+
+</script>
+
+
+
+<!-- Event snippet to fire on 7 URL or'd && 7 Thank you messages or'd -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+  var str = setInterval(function() {
+    var url = window.location.href;
+    if ((url.includes("whitepaper/onetick-cloud-product-overview") ||
+				 url.includes("whitepaper/technical-product-overview") || 
+				 url.includes("whitepaper/market-surveillance")	|| 
+				 url.includes("datacoverage") || 
+				 url.includes("ectq-sample") || 
+				 url.includes("pointintimetcawebinar") || 
+				 url.includes("onetickcloudwebinar")) && 
+			 ((jQuery('[id="hs_form_target_form_373462811"]:contains(Thanks for submitting the form. Please look in your inbox for a link to download this white paper.)').is(':visible')) ||
+				(jQuery('[id="hs_form_target_form_635980698"]:contains(Please check your email with a link to download this white paper)').is(':visible')) ||
+				(jQuery('[id="hs_form_target_form_568948182"]:contains(Please check your email with a link to download this white paper)').is(':visible')) ||
+				(jQuery('[id="hs_form_target_form_42478773"]:contains(Please check your email with a link to download this white paper)').is(':visible')) ||
+				(jQuery('[id="hs_form_target_form_369342525"]:contains(Please check your email with a link to download ECTQ Data Sample)').is(':visible')) ||
+				(jQuery('[id="hs_form_target_form_909129626"]:contains(Thank you for requesting this webinar. Please check your email for the download link.)').is(':visible')) ||
+				(jQuery('[id="hs_form_target_form_353130912"]:contains(Thanks for submitting the form, please check your email for a link to the webinar.)').is(':visible')) )) {
+			alert("Hi");
+      gtag('event', 'conversion', {
+        'send_to': 'AW-818802605/SVrACMSQ2eMBEK3ft4YD'
+      });
+      clearInterval(str);
+    }
+  }, 1000);
+
+</script>
+
+
+
+<!-- Analytics Event snippet for tracking URL Parameters -->
+<script>
+  var query = window.location.search; // grab the query string
+  var urlParameters = new URLSearchParams(query); // parse the query string’s parameters
+  var parameter1 = urlParameters.get('vfb-field-17')
+  var parameter2 = urlParameters.get('vfb-field-18')
+  var parameter3 = urlParameters.get('vfb-field-19')
+  gtag('event', parameter2, {
+    'event_category': parameter1,
+    'event_label': parameter3,
+    'value': 0
+  });
+
+  gtag('event', 'aaa', {
+    'event_category': 'bbb',
+    'event_label': 'ccc'
+  });
+
+</script>
+
+
+
+<!-- Event snippet to inject Jquery on a page -->
+<script>
+  var jQuer = document.createElement('script');
+  jQuer.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js";
+
+  document.getElementsByTagName('head')[0].appendChild(jQuer);
+
+</script>
+
+
+<!-- Event snippet to inject Jquery on a page -->
+
+<script>
+  var jQuer = document.createElement('script');
+  jQuer.src = "https://www.googletagmanager.com/gtag/js";
+
+  document.getElementsByTagName('head')[0].appendChild(jQuer);
+
+</script>
+
+
+<!-- WhatsApp Icon -->
+
+<a target="_blank" href="https://api.whatsapp.com/send?phone=8147811468" id="whatsapp-button" style="position:fixed; bottom:10px; right:10px; width:50px; z-index:999;"><img style="width:100%;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBhdGggc3R5bGU9ImZpbGw6I0VERURFRDsiIGQ9Ik0wLDUxMmwzNS4zMS0xMjhDMTIuMzU5LDM0NC4yNzYsMCwzMDAuMTM4LDAsMjU0LjIzNEMwLDExNC43NTksMTE0Ljc1OSwwLDI1NS4xMTcsMCAgUzUxMiwxMTQuNzU5LDUxMiwyNTQuMjM0UzM5NS40NzYsNTEyLDI1NS4xMTcsNTEyYy00NC4xMzgsMC04Ni41MS0xNC4xMjQtMTI0LjQ2OS0zNS4zMUwwLDUxMnoiLz4KPHBhdGggc3R5bGU9ImZpbGw6IzU1Q0Q2QzsiIGQ9Ik0xMzcuNzEsNDMwLjc4Nmw3Ljk0NSw0LjQxNGMzMi42NjIsMjAuMzAzLDcwLjYyMSwzMi42NjIsMTEwLjM0NSwzMi42NjIgIGMxMTUuNjQxLDAsMjExLjg2Mi05Ni4yMjEsMjExLjg2Mi0yMTMuNjI4UzM3MS42NDEsNDQuMTM4LDI1NS4xMTcsNDQuMTM4UzQ0LjEzOCwxMzcuNzEsNDQuMTM4LDI1NC4yMzQgIGMwLDQwLjYwNywxMS40NzYsODAuMzMxLDMyLjY2MiwxMTMuODc2bDUuMjk3LDcuOTQ1bC0yMC4zMDMsNzQuMTUyTDEzNy43MSw0MzAuNzg2eiIvPgo8cGF0aCBzdHlsZT0iZmlsbDojRkVGRUZFOyIgZD0iTTE4Ny4xNDUsMTM1Ljk0NWwtMTYuNzcyLTAuODgzYy01LjI5NywwLTEwLjU5MywxLjc2Ni0xNC4xMjQsNS4yOTcgIGMtNy45NDUsNy4wNjItMjEuMTg2LDIwLjMwMy0yNC43MTcsMzcuOTU5Yy02LjE3OSwyNi40ODMsMy41MzEsNTguMjYyLDI2LjQ4Myw5MC4wNDFzNjcuMDksODIuOTc5LDE0NC43NzIsMTA1LjA0OCAgYzI0LjcxNyw3LjA2Miw0NC4xMzgsMi42NDgsNjAuMDI4LTcuMDYyYzEyLjM1OS03Ljk0NSwyMC4zMDMtMjAuMzAzLDIyLjk1Mi0zMy41NDVsMi42NDgtMTIuMzU5ICBjMC44ODMtMy41MzEtMC44ODMtNy45NDUtNC40MTQtOS43MWwtNTUuNjE0LTI1LjZjLTMuNTMxLTEuNzY2LTcuOTQ1LTAuODgzLTEwLjU5MywyLjY0OGwtMjIuMDY5LDI4LjI0OCAgYy0xLjc2NiwxLjc2Ni00LjQxNCwyLjY0OC03LjA2MiwxLjc2NmMtMTUuMDA3LTUuMjk3LTY1LjMyNC0yNi40ODMtOTIuNjktNzkuNDQ4Yy0wLjg4My0yLjY0OC0wLjg4My01LjI5NywwLjg4My03LjA2MiAgbDIxLjE4Ni0yMy44MzRjMS43NjYtMi42NDgsMi42NDgtNi4xNzksMS43NjYtOC44MjhsLTI1LjYtNTcuMzc5QzE5My4zMjQsMTM4LjU5MywxOTAuNjc2LDEzNS45NDUsMTg3LjE0NSwxMzUuOTQ1Ii8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="></a>
+
+
+<!-- Shopify codes -->
+
+<!-- Global site tag (gtag.js) - Google AdWords: 830792256 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-9999999999"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-999999999999');
+</script>
+
+
+{% if first_time_accessed %}
+<!-- Event snippet for Test conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-999999999999/XXXXXXXXXXXXXX',
+      'value': '{{ checkout.total_price | money_without_currency | remove: "," }}',
+      'currency': 'ZAR',
+      'transaction_id': '{{ checkout.order_id }}'
+  });
+</script>
+{% endif %}
+
+
+{% if first_time_accessed %}
+<!-- Event snippet for Sales conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-853467433/VwRlCNOkseoBEKnC-5YD',
+      'value': '{{ checkout.total_price | money_without_currency | remove: "," }}',
+      'currency': '{{ currency.iso_code }}',
+      'transaction_id': '{{ order.order_number }}'
+  });
+</script>
+{% endif %}
