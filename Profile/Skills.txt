@@ -1,0 +1,71 @@
+PROFILE SUMMARY
+
+Working as Senior Process Executive for CTS onsite at Google.
+Passionate in Frontend and Backend development, analysis, tracking and optimization of websites.
+Sound knowledge and experience in:
+Front-end technologies – HTML5, CSS3, Bootstrap, JavaScript and associated technologies and toolsets JQuery, JSON, AJAX.
+Server-side technologies - PHP, SQL, MongoDB.
+Versioning tools - Git, GitHub, GitLab.
+Content Management Systems - WordPress, Magento 1&2, Joomla, Shopify, Wix, Weebly, Bigcommerce, GoDaddy, SquareSpace.
+Digital Marketing and Website Tracking tools - Google Ads, Google Analytics and Google Tag Manager.
+Strong understanding and expertise in UI/UX.
+Comfortable with modern JS frameworks such as Angular.
+Expert in developing Responsive & Interactive websites.
+Sound Capable of Performance Testing, Documentation, and Deployment on live site.
+Experienced working in a fast-paced, dynamic environment.
+Able to solve problems independently and in a team, with maximum ownership.
+Able to write front-end code that is cross-browser and cross-device friendly, through responsive or adaptive techniques.
+Use latest processes and technology in order to build scalable, distributed, and fault-tolerant site/software systems.
+Excellent time management, multi-tasking and communication skills.
+Strong Data Structures and Algorithms knowledge.
+Hands-on experience on using profiling tools well, getting to root causes of bugs fast.
+Ability to pick and work on new technologies very quick if and when required.
+In-depth understanding of the entire web development process (design, development and deployment).
+Working knowledge of the general browser landscape, architectures, trends, and emerging technologies.
+Actively participate in the planning phase of development.
+Ability to write model code for functional and nonfunctional requirements and help improve the code quality standard across the team.
+
+
+Google Responsibility :
+
+Research, design, build, and deploy highly reliable, available, and scalable technology products.
+Collaborate effectively with associate engineers towards building the right features.
+Drive the technical roadmap of the team in collaboration with team associates.
+Estimate and manage deliveries of features in a predictable manner.
+Collaborate, mentor, and guide team members as may be the need.
+Contribute to building process improvements that lend to continuous improvements in the predictability of releases in the specific problem areas.  
+Convert product requirements into actionable and tangible items for all stakeholders.
+Release estimation, planning and timely integration with other stakeholders.
+Continuously discover, evaluate, and implement new best practices to maximize development quality efficiency.
+Overall Design - Code, Security, Performance fixes and Optimization.
+Delivery of small complete changes at high cadence.
+Research and evaluate new methodologies and technologies that improve the quality, reliability, and performance of the development systems and processes.
+Apply usability principles and procedures and optimize builds. Reuse through documenting common frontend components that save the business time in executing future projects.
+Emphasize a consumer-focused approach in building products that works with both senior and junior frontend teams in determining the prioritization and estimation of new features and improvements.
+Current Project: WebTech - which involves working with:
+Technologies - HTML, CSS, Bootstrap, JavaScript, JQuery, JSON, AJAX, Web Framework, Libraries, Git
+Content Management Systems like WordPress, Drupal, Magento 1&2, Shopify, Joomla, Shopify, Wix, Weebly, Bigcommerce, GoDaddy, SquareSpace, WebFlow,
+Digital Marketing tools - Google Ads, Google Analytics and Google Tag Manager.
+In constant communication with other colleagues in the business to develop and deploy Clients content – and ensuring there is a clear establishment of what can be created within what time frame.
+Implementing contingency plans in case the website goes down. Maintaining and expanding/enhancing the website once built and Managing a small team was also a part of the job role.
+
+
+HP 
+Understanding various product lines and initiate right response to commercial clients, positively and professionally.
+Troubleshooting product related queries of customers and provide remote solutions to problem.
+Deal with a wide range of products using a powerful information database.
+Documentation of development and improvements workflows.
+Consulting with departments or customers on project issues.
+Work with customers or departments on technical issues including product design and maintenance.
+Preparing reports on project activities, or status.
+Participate in customer demos and presentations.
+Provide timely and accurate customer feedback to the relevant teams.
+Provide support to customers/users  where the product is highly technical in nature.
+Provides technical support to field engineers, technicians, and product support teams.
+Reports design, reliability and maintenance problems or bugs.
+Provide top-quality technical assistance to partners, resulting in high partner satisfaction
+Maintain close relationships with key partners, driving issue resolution and facilitating communication with technical support staff
+Lead partner meetings to review/prioritize open tickets
+Provide input on product and service-related enhancement requests back to Engineering, Product Management, Sales, and Marketing teams.
+Learn and keep up-to-date on the latest product features, functionality, dependencies, underlying architecture, and their operational impact.
+Share and develop best practices with team members to enhance the quality and efficiency of technical support and contribute to the knowledge base.
