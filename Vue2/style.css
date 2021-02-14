@@ -40,10 +40,10 @@ img {
 }
 
 .cart {
-  margin-right: 25px;
+  margin-right: 16px;
   float: right;
   border: 1px solid #d8d8d8;
-  padding: 5px 20px;
+  padding: 1px 20px;
 }
 
 button {
@@ -88,6 +88,6 @@ textarea {
   text-decoration: underline;
 }
 
-.outOfStock {
-  /* text-decoration: line-through; */
-}
+/* .outOfStock {
+  text-decoration: line-through;
+} */

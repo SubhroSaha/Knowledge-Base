@@ -12,46 +12,10 @@
     <div class="nav-bar"></div>
 
     <div id="app">
-        <div class="product">
-            <div class="product-image">
-                <a :href="link">
-                    <img v-bind:src="image" >
-                </a>
-            </div>
-            <div class="product-info">
-                <!-- <h1>{{ product }}</h1> -->
-                <!-- <p v-if="inventory > 10">In Stock</p> -->
-                <!-- <p v-else-if="inventory > 0 && inventory <= 10">Almost sold out!</p> -->
-                <!-- <p v-else>Out of Stock</p> -->
-                <!-- <p v-show="!inStock">v-show</p> -->
-                <!-- <p v-if="onSale">On Sale!</p> -->
-                <h1>{{ brand }} {{ product }}</h1>
-                <p v-if="inStock">In Stock</p>
-                <p v-else :class="{ outOfStock: !inStock }">Out of Stock</p>
-                <ul>
-                    <li v-for="detail in details">{{ detail }}</li>
-                </ul>
-                <div v-for="(variant, index) in variants" 
-                    :key="variant.variantId"
-                    class="color-box"
-                    :style="{ backgroundColor: variant.variantColor }"
-                    @mouseover="updateProduct(index)">
-                    <!-- <p v-on:mouseover="updateProduct(variant.variantImage)">{{ variant.variantColor }}</p> -->
-                </div>
-                <ul>
-                    <li v-for="size in sizes">{{ size }}</li>
-                </ul>
-                <button v-on:click="addToCart"
-                        :disabled="!inStock"
-                        :class="{ disabledButton: !inStock }">Add to Cart</button>
-                <button v-on:click="removeFromCart"
-                        :disabled="!inStock"
-                        :class="{ disabledButton: !inStock }">Remove</button>
-                <div class="cart">
-                    <p>Cart({{ cart }})</p>
-                </div>
-            </div>
+        <div class="cart">
+            <p>Cart ({{ cart.length }})</p>
         </div>
+        <product :premium="premium" @add-to-cart='updateCart' @remove-from-cart='removeCart'></product>
     </div>
 
     <!-- development version, includes helpful console warnings -->

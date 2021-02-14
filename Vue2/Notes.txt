@@ -17,12 +17,15 @@ v-model	    sets up a two-way binding for form inputs. used in form elements, up
 v-once	    applies the property just once, and never refreshes it even if the data passed changes
 v-key       adds key to an element
 
+
 v-bind and v-on have a shorthand format:
 
 <a v-bind:href="url">...</a>
 <a :href="url">...</a>
 <a v-on:click="doSomething">...</a>
 <a @click="doSomething">...</a>
+
+
 Example of v-if / v-else / v-else-if:
 
 <div v-if="type === 'A'">
