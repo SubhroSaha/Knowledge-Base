@@ -1,0 +1,176 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	width: 1880px;
+	height: 1200px;
+	background-color: #f7f7f7;
+}
+
+.header-top {
+	background-color: black;
+	height: 38px;
+	color: white;
+	font-size:22px;
+	padding: 0px 10px;
+}
+
+.fa {
+	margin-top: 8px;
+	font-size:22px;
+	color:white;
+}
+
+.center {
+	margin: 0px 790px;
+}
+
+.right {
+	float: right;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+h1 {
+	text-align: center;
+	color: #f64e01;
+	margin-top: 30px;
+	font-weight: 800;
+	font-size: 52px;
+}
+
+h2 {
+	text-align: center;
+	color: #f64e01;
+	margin-top: 30px;
+	font-weight: 800;
+	font-size: 46px;
+}
+
+.meet {
+	font-weight: 400;
+	font-size: 46px;
+}
+
+h3 {
+	font-weight: 800;
+	font-size: 35px;
+	margin-top: 20px;
+}
+
+h4 {
+	font-weight: 400;
+	font-size: 30px;
+}
+
+.back {
+	grid-area: back;
+	grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+	
+}
+
+.welcome {
+	grid-area: welcome;
+	grid-column: 4 / span 6;
+    grid-row: 1 / span 1;
+	margin-bottom: 30px;	
+}
+
+.hugh {
+	grid-area: hugh;
+	grid-column: 3 / span 2;
+    grid-row: 2 / span 3;
+	justify-self: center;
+	text-align: center;
+	
+}
+
+.carla {
+	grid-area: carla;
+	grid-column: 6 / span 2;
+    grid-row: 2 / span 3;
+	justify-self: center;
+	text-align: center;
+	
+}
+
+.donna {
+	grid-area: donna;
+	grid-column: 9 / span 2;
+    grid-row: 2 / span 3;
+	justify-self: center;
+	text-align: center;
+	
+}
+
+.users {
+	grid-area: users;
+	grid-column: 3 / span 3;
+    grid-row: 5 / span 1;
+	justify-self: center;
+}
+
+.next {
+	grid-area: next;
+	grid-column: 6 / span 5;
+    grid-row: 5 / span 1;
+	justify-self: start;
+	align-self: start;
+}
+
+.submit {
+	grid-area: submit;
+	grid-column: 6 / span 2;
+    grid-row: 6 / span 1;
+	justify-self: center;
+}
+
+.fa-chevron-left {
+	color: #5f5f5f;
+	border: 6px solid #5f5f5f;
+	border-radius: 8px;
+	padding: 13px 20px 10px 16px;
+	margin: 16px 10px 0px 16px;
+}
+
+.grid > div.back > div > p {
+	color: #5f5f5f;
+	margin: 5px 10px 10px 35px;
+}
+
+button {
+	height: 110px;
+	width: 280px;
+	background-color: #f64e01;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+    margin-top: 60px;
+}
+
+li {
+	font-weight: bold;
+	font-size: 41px;
+    margin: 10px 0px 0px 40px;
+    color: #606060;	
+}
+
+.fade_rule {
+	height: 1px;
+    background-color: #f64e01;
+    width: 700px;
+    margin: 0 auto;
+    background-image: linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+    background-image: -o-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+    background-image: -moz-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+    background-image: -webkit-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+    background-image: -ms-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, gray), color-stop(0.98, white) );
+}
