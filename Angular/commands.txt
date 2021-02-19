@@ -1,7 +1,15 @@
+Check that you have node and npm installed
+To check if you have Node.js installed, run this command in your terminal:
+node -v
+To confirm that you have npm installed you can run this command in your terminal:
+npm -v
+
+
 npm install -g @angular/cli
 ng new my-dream-app
 cd my-dream-app
 ng serve
+
 npm install --save bootstrap jquery
 add
 
