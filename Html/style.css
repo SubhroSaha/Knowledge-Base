@@ -3,7 +3,7 @@
   grid-template-columns: repeat(12, 100px);
 }
 
-.gird > div {
+.grid > div {
   height: 100px;
   width: 100px;
   background-color: #4287f5;
