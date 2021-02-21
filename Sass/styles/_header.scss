@@ -1,0 +1,21 @@
+@import './contact';
+
+header {
+    display: flex;
+    justify-content: center;
+    color: $textColor;
+    height: 100vh;
+    @include flexCenter(column, rgb(99, 163, 121));
+    button{
+        background: $primaryButton;
+        &:hover {
+            background: $hoverColor;
+        }
+        &::before {
+            content: "::before ";
+        }
+        &::after {
+            content: " ::after";
+        }
+    }
+}

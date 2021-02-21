@@ -1,0 +1,19 @@
+@mixin flexCenter($direction, $background) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background: $background;
+}
+
+.contact {
+    height: 100vh;
+    @include flexCenter(row, rgb(139, 139, 139));
+    button {
+        background: $primaryButton;
+        &:hover {
+            background: $hoverColor;
+        }
+    }
+    
+}

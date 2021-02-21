@@ -1,0 +1,7 @@
+@import './header';
+
+footer {
+    @extend header;
+    background: cornflowerblue;
+    width: 100% - 20%;
+}
