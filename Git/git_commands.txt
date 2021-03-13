@@ -82,6 +82,9 @@ git push url >> push repository to remote URL
 
 git pull origin master >> pulls all changes from remote URL
 
+git push origin main >> pushes all changes to remote URL
+Make sure to add commit the changes locally first before pushing changes
+
 git push origin master >> Make sure to add commit the changes locally first before pushing changes
 
 git stash -u >> to stash an unfinished job and make the directory clean
