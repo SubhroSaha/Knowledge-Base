@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax 3 - External API</title>
+    <style>
+        /* * {
+            box-sizing: border-box;
+        }
+        .user {
+            width: 400px;
+            height: 100px;
+            border: 2px solid black;
+            background: #f4f4f4;
+            padding: 23px;
+            margin: 20px 0px;
+        }
+        .user li {
+            list-style : none;
+        }
+        .user img {
+            margin-right: 15px;
+            float: left;
+            height: 50px;
+            width: 50px;
+        }
+        .user ul {
+            margin-left: 15px;
+            display: block;
+            margin: 2px 0 0 0;
+        } */
+        .user {
+            display: flex;
+            background: antiquewhite;
+            border: 2px solid;
+            width: 300px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        img {
+            width: 70px;
+        }
+        li {
+            list-style: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="button">Load GitHub Users</button>
+    <br><br>
+    <h1>GitHub Users</h1>
+    <div id="users"></div>
+
+
+    <script>
+        document.getElementById('button').addEventListener('click', loadUser);
+
+        function loadUser() {
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('GET', 'https://api.github.com/users', true);
+
+            xhr.onload = function() {
+                if(this.status == 200) {
+                    var users = JSON.parse(this.responseText);
+                    
+                    var output = '';
+                    for(var i in users) {
+                        output +=
+                        '<div class="user">' +
+                        '<img src="'+users[i].avatar_url+'">' +
+                        '<ul>' +
+                            '<li>ID:'+users[i].id+'</li>' +
+                            '<li>Login:'+users[i].login+'</li>' +
+                        '</ul>' +
+                        '</div>';                            
+                    }
+                    document.getElementById('users').innerHTML = output;
+                }
+            }
+            xhr.send();
+        }
+    </script>
+    
+</body>
+</html>
