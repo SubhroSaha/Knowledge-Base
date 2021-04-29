@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+
+    <script>
+        
+        // Promise
+        let p = new Promise((resolve, reject) => {
+            let a = 1 + 1;
+            if (a == 2) {
+                resolve('Success');
+            } else {
+                reject('Failed');
+            }
+        })
+
+        p.then((message) => {
+            console.log('This is in the then block: ' + message);
+        }).catch((message) => {
+            console.log('This is in the catch block: ' + message);
+        })
+
+    </script>
+
+
+    <script>
+
+        // Callback
+        // const userLeft = false;
+        // const useWatchingCatMeme = false;
+
+        // function watchTutorialCallback(callback, errorCallback) {
+        //     if (userLeft) {
+        //         errorCallback({
+        //             name: 'User Left',
+        //             message: ':('
+        //         })
+        //     } else if (useWatchingCatMeme) {
+        //         errorCallback({
+        //             name: 'User Watching Cat Meme',
+        //             message: 'WebDevSimplified < Cat'
+        //         })
+        //     } else {
+        //         callback('Thumbs up and Subscribe');
+        //     }
+        // }
+
+        // watchTutorialCallback((message) => {
+        //     console.log('Success: ' + message);
+        // }, (error) => {
+        //     console.log(error.name + ' ' + error.message);
+        // })
+
+
+        // Promise
+        const userLeft = false;
+        const useWatchingCatMeme = false;
+
+        function watchTutorialPromise() {
+            return new Promise((resolve, reject) => {
+                if (userLeft) {
+                    reject({
+                        name: 'User Left',
+                        message: ':('
+                    })
+                } else if (useWatchingCatMeme) {
+                    reject({
+                        name: 'User Watching Cat Meme',
+                        message: 'WebDevSimplified < Cat'
+                    })
+                } else {
+                    resolve('Thumbs up and Subscribe');
+                }
+            })
+        }
+
+        watchTutorialPromise().then((message) => {
+            console.log('Success: ' + message);
+        }).catch((error) => {
+            console.log(error.name + ' ' + error.message);
+        })
+
+    </script>
+
+</body>
+
+</html>

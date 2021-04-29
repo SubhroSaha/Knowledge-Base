@@ -1,0 +1,26 @@
+{
+  "name": "kb",
+  "version": "1.0.0",
+  "description": "My Knowledge Base",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SubhroSaha/Knowledge-Base.git"
+  },
+  "author": "Subhro Saha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SubhroSaha/Knowledge-Base/issues"
+  },
+  "homepage": "https://github.com/SubhroSaha/Knowledge-Base#readme",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
