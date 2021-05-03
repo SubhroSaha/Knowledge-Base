@@ -1,27 +1,22 @@
 GIT Commands
 
 git --version
-
 git init
-
-git add
-
+git add <filename>
 git add .
-
+git diff >> show difference between working tree and stage
+git diff --staged >> show difference between stage last commit
 git commit -m "message"
-
 git status
-
+git log
 git config [<options>]
-
 git config --global user.name "My Name"
-
 git config --global user.email "myemail@example.com"
-
-
+git config --local user.name "My Name"
+git config --local user.email "myemail@example.com"
 git config --list >> show your Git username
 
-usage: git config [<options>]
+git config [<options below>]
 
 Config file location
     --global              use global config file
@@ -64,34 +59,21 @@ Other
     --default <value>     with --get, use default value when missing entry
 
 git branch >> list all branches
-
 git branch branchName >> create new branch
-
 git checkout branchName >> jump to branchName
 
 For merging branches >> jump to destination branch and give command:
-
 git merge sourceBranch
-
 git branch -d branchName >> To delete branch with name: branchName
-
 git branch -D branchName >> To delete branch with name: branchName (will not show unmerged changes)
-
 git remote >> list remote url
-
 git push url >> push repository to remote URL
-
 git pull origin master >> pulls all changes from remote URL
-
-git push origin main >> pushes all changes to remote URL
-Make sure to add commit the changes locally first before pushing changes
-
 git push origin master >> Make sure to add commit the changes locally first before pushing changes
-
+git push origin main >> pushes all changes to remote URL
 git stash -u >> to stash an unfinished job and make the directory clean
 
 Adv. git commands
-
 git stash
 git stash -u
 git stash list
@@ -152,7 +134,7 @@ See 'git help git' for an overview of the system.
 
 David Mahler
 37.8K subscribers
->>>>>>> express
+
 Introduction to Git - Branching and Merging.
 Twitter: @davidmahler
 LinkedIn: https://www.linkedin.com/in/davidmahler​
@@ -189,20 +171,10 @@ git stash pop = apply most recent stash, and remove it from saved stashes
 git stash apply (stash reference) = apply a specific stash point
 git stash save "(description)" = create a stash point, be more descriptive
 
-=================================================================================================
-
-How to use Visual Studio Code as Default Editor for Git
-In the most recent release (v1.0, released in March 2016), you are now able to use VS Code as the default git commit/diff tool. Quoted from the documentations:
-Make sure you can run code --help from the command line and you get help.
-if you do not see help, please follow these steps:
-Mac: Select Shell Command: Install 'Code' command in path from the Command Palette.
-Command Palette is what pops up when you press shift + ⌘ + P while inside VS Code. (shift + ctrl + P in Windows)
-Windows: Make sure you selected Add to PATH during the installation.
-Linux: Make sure you installed Code via our new .deb or .rpm packages.
-From the command line, run git config --global core.editor "code --wait"
-Now you can run git config --global -e and use VS Code as editor for configuring Git.
-
 Visualizing branch topology in Git
+
+gitk --all
+git log --all --decorate --oneline --graph
 [alias]
     lg = lg1
     lg1 = lg1-specific --all
@@ -212,4 +184,79 @@ Visualizing branch topology in Git
     lg1-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
     lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
     lg3-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
->>>>>>> express
+
+
+======================================================================================================================================================================
+
+How to use Visual Studio Code as Default Editor for Git
+
+In the most recent release (v1.0, released in March 2016), you are now able to use VS Code as the default git commit/diff tool. Quoted from the documentations:
+
+Make sure you can run code --help from the command line and you get help.
+if you do not see help, please follow these steps:
+Mac: Select Shell Command: Install 'Code' command in path from the Command Palette.
+Command Palette is what pops up when you press shift + ⌘ + P while inside VS Code. (shift + ctrl + P in Windows)
+Windows: Make sure you selected Add to PATH during the installation.
+Linux: Make sure you installed Code via our new .deb or .rpm packages.
+From the command line, run git config --global core.editor "code --wait"
+Now you can run git config --global -e and use VS Code as editor for configuring Git.
+
+Usage: code.exe [options][paths...]
+
+To read output from another program, append '-' (e.g. 'echo Hello World | code.exe -')
+
+Options
+  -d --diff <file> <file>           Compare two files with each other.
+  -a --add <folder>                 Add folder(s) to the last active window.
+  -g --goto <file:line[:character]> Open a file at the path on the specified
+                                    line and character position.
+  -n --new-window                   Force to open a new window.
+  -r --reuse-window                 Force to open a file or folder in an
+                                    already opened window.
+  -w --wait                         Wait for the files to be closed before
+                                    returning.
+  --locale <locale>                 The locale to use (e.g. en-US or zh-TW).
+  --user-data-dir <dir>             Specifies the directory that user data is
+                                    kept in. Can be used to open multiple
+                                    distinct instances of Code.
+  -h --help                         Print usage.
+
+Extensions Management
+  --extensions-dir <dir>
+      Set the root path for extensions.
+  --list-extensions
+      List the installed extensions.
+  --show-versions
+      Show versions of installed extensions, when using --list-extensions.
+  --category
+      Filters installed extensions by provided category, when using --list-extensions.
+  --install-extension <extension-id[@version] | path-to-vsix>
+      Installs or updates the extension. The identifier of an extension is always `${publisher}.${name}`. Use `--force` argument to update to latest version. To install a specific version provide `@${version}`. For example: 'vscode.csharp@1.2.3'.
+  --uninstall-extension <extension-id>
+      Uninstalls an extension.
+  --enable-proposed-api <extension-id>
+      Enables proposed API features for extensions. Can receive one or more extension IDs to enable individually.
+
+Troubleshooting
+  -v --version                       Print version.
+  --verbose                          Print verbose output (implies --wait).
+  --log <level>                      Log level to use. Default is 'info'.
+                                     Allowed values are 'critical', 'error',
+                                     'warn', 'info', 'debug', 'trace', 'off'.
+  -s --status                        Print process usage and diagnostics
+                                     information.
+  --prof-startup                     Run CPU profiler during startup
+  --disable-extensions               Disable all installed extensions.
+  --disable-extension <extension-id> Disable an extension.
+  --sync <on> <off>                  Turn sync on or off
+  --inspect-extensions <port>        Allow debugging and profiling of
+                                     extensions. Check the developer tools for
+                                     the connection URI.
+  --inspect-brk-extensions <port>    Allow debugging and profiling of
+                                     extensions with the extension host being
+                                     paused after start. Check the developer
+                                     tools for the connection URI.
+  --disable-gpu                      Disable GPU hardware acceleration.
+  --max-memory                       Max memory size for a window (in Mbytes).
+  --telemetry                        Shows all telemetry events which VS code
+                                     collects.
