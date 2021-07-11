@@ -32,3 +32,19 @@ git stash apply = apply most recent stash
 git stash pop = apply most recent stash, and remove it from saved stashes
 git stash apply (stash reference) = apply a specific stash point
 git stash save "(description)" = create a stash point, be more descriptive
+
+Looking for git in: C:\Program Files\Git\cmd\git.exe
+Using git 2.27.0.windows.1 from C:\Program Files\Git\cmd\git.exe
+> git rev-parse --git-dir
+Open repository: c:\xampp\htdocs\KB
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/express refs/remotes/express
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :Git/somemore.txt
+> git ls-files --stage -- C:\xampp\htdocs\KB\Git\somemore.txt
+> git cat-file -s e1b527f703705b2601eb5bb432ab4cb8dee723c3

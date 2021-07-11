@@ -171,6 +171,8 @@ git stash pop = apply most recent stash, and remove it from saved stashes
 git stash apply (stash reference) = apply a specific stash point
 git stash save "(description)" = create a stash point, be more descriptive
 
+git push --set-upstream origin 573263-GTM-Search-Event-in-FB-pixel
+
 Visualizing branch topology in Git
 
 gitk --all
