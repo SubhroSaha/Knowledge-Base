@@ -656,3 +656,4 @@ wsmanhttpconfig	Manages functions of the Windows Remote Management (winrm).	10/8
 
 npm i -g typescript >>>> Install typescript globally
 code finame.ext >>>> opens file on vscode
+type NUL > test.js >>>> Creates a file with filename text.js
